@@ -1,0 +1,304 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0;
+	padding:0;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+
+/* Mobile First CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
+
+body {
+	background: linear-gradient(to bottom, #041A26, #0A2633, #131824); 
+	font-family: 'Poppins', sans-serif;
+min-height: 100%;
+      overflow-x: hidden;
+}
+
+h1{
+    font-size: 1rem;
+    text-align: left;
+    letter-spacing: 0.5px;
+    font-weight: normal;
+    color:#AABEEB;
+    font-weight: 500;
+    text-shadow: 0px 0px 10px #5A79C9, 0px 0px 20px #AABEEB, 0px 0px 30px #C7E6FF;
+    font-family:'Uncial Antiqua', cursive;
+     margin-bottom: 30px;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #D8D8D8;
+    text-align: justify;
+    font-family: 'Poppins', serif;
+     margin-bottom: 15px;
+     letter-spacing: 0.5px;
+}
+
+
+.header-title{
+     font-family:'Uncial Antiqua', cursive;
+    font-size:3rem;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #C7E6FF;
+     text-shadow: 0px 0px 10px #719AFF, 0px 0px 20px #3B6EFF; 
+      margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+a {
+    color: #C7E6FF;
+    text-decoration: none;
+    font-weight: normal;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+a:hover {
+    color: #AABEEB;
+    text-shadow: 0px 0px 10px #719AFF, 0px 0px 20px #3B6EFF;
+}
+
+a:active {
+    color: #3B6EFF;
+ text-shadow: 0px 0px 5px #3B6EFF;
+}
+
+
+footer {
+    font-size: 0.9rem;
+    font-style: italic;
+     color:#B8C0D8;
+    text-align: center;
+     padding: 10px 0;
+     background: transparent;
+    text-shadow: 0px 0px 5px rgba(170, 190, 235, 0.5), 0px 0px 10px rgba(100, 150, 255, 0.3);
+     letter-spacing: 0.5px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+     margin: 20px auto;
+     text-align: center;
+     max-width: 90%;
+    background: rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+      border: 2px solid #3B6EFF;
+     transition: all 0.3s ease;
+      position: relative;
+    min-height: 200px;
+    background: linear-gradient(to right, rgba(3, 15, 34, 0.8), rgba(29, 28, 34, 0.8));
+}
+
+section:hover{
+    background: rgba(0, 0, 0, 0.4);
+     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+section p {
+    font-size: 1.1rem;
+    line-height: 1.6em;
+    text-align: justify;
+    margin-bottom: 20px;}
+
+section {
+    background: linear-gradient(to right, rgba(3, 15, 34, 0.8), rgba(29, 28, 34, 0.8));}
+    
+
+section::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: #3B6EFF;
+    border-radius: 10px 10px 0 0;}
+
+#container {
+	width:90%;
+	margin:auto;
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+     grid-gap: 15px; 
+     padding: 15px;
+}
+.simple-button {
+   background: linear-gradient(45deg, #4B3F72, #8B60A7, #6D4C99);
+    font-family:'Uncial Antiqua', cursive;
+    color: #fff; 
+   padding: 8px 15px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 0 20px rgba(173, 138, 233, 0.5);
+}
+
+.simple-button:hover {
+    background: linear-gradient(45deg, #6D4C99, #8B60A7, #4B3F72); 
+    transform: scale(1.1); 
+    box-shadow: 0 0 30px rgba(173, 138, 233, 0.7);
+}
+
+.simple-button:active {
+    transform: scale(1); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+figure {
+	margin:0px;
+}
+
+figure img {
+	width:100%;
+}
+
+nav section {
+	border:1px solid black;
+}
+
+
+/* Class for making YouTube/Vimeo videos responsive */
+
+figure.responsive {
+    position: relative;
+    padding-bottom: 56.25%;  /* 16:9 */
+    height: 0px;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+figure.responsive iframe {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+.info{
+  padding: 20px;
+     color: #D8D8D8;
+     border-radius: 8px;
+    background-color: #131824;
+     margin-top: 30px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+}
+
+.info p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #AABEEB;}
+
+.mobile{
+    display:  block;
+    padding: 15px;
+    background-color: #131824;
+    text-align: center;
+    color: #D8D8D8;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+
+/* A better looking default horizontal rule */
+hr {
+    display: block;
+    height: 1px;
+    border: 0px;
+    border-top: 1px solid #ccc;
+    margin: 1em 0px;
+    padding: 0px;
+}
+
+
+
+/* ========================================
+MEDIA QUERIES!
+You can adjust the min-width numbers below, and add as many new media queries as you need.
+======================================== */
+
+/* Minimum width for iPads and tablets.  */
+@media all and (min-width: 481px) {
+	
+	.
+} /* closes 481px+ */
+
+
+
+/* Minimum width for laptops. */
+@media all and (min-width: 769px) {
+ 
+    #container{
+        80%;
+    }
+    .mobile{
+        display: none;
+    }
+    .info{
+       display: block; 
+    }
+    .nav{
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: space-between;
+    }
+    nav section{
+        
+        flex: 0 1 48%    
+    }
+    nav{
+    display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 15px;
+    }
+		
+	
+} /* closes 769px+ */
+
+
+
+/* Minimum width for desktop screens. */
+@media all and (min-width: 1024px) {
+	
+    nav section{
+    flex: 0 1 48%
+    }	
+    
+    nav{
+     grid-template-columns: repeat(3,1fr);   
+        
+    }
+    
+    
+} /* closes 1024px+ */
+
+
+
+
+
