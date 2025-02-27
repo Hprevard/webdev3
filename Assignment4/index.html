@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Assignment 4</title>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Rubik+Glitch&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css"> 
+</head>
+
+<body>
+  <div id="container">
+    <main>
+      <header>
+        <h1>Pluto's Portfolio</h1>
+        <h2>My mind is the muse. My creations can never be duplicated.</h2>
+      </header>
+      
+      <figure> 
+        <img src="img/Throne_Room.jpg" alt="Placeholder Image" style= "width=275; max-width:575px; height: auto;">
+        <figcaption>Corporate Aesthetics at its Peak</figcaption>
+      </figure>
+
+      <section class="corporate-content">
+        <h3>Welcome</h3>
+        <p>At Pluto Creative Solutions, we specialize in cutting-edge UI/UX, animation, and storytelling. Our work blends aesthetics with functionality to craft immersive experiences.</p>
+        
+        <h3>Portfolio Highlights</h3>
+        <ul>
+          <li><a href="#ux-design">UI/UX and Service Design</a></li>
+          <li><a href="#motion-graphics">Motion Graphics and Animation</a></li>
+          <li><a href="#storytelling">Visual Storytelling and Concept Art</a></li>
+          <li><a href="#experimental">Experimental and Interactive Media</a></li>
+        </ul>
+      </section>
+
+      <p>I believe in going around Corporate aesthetics, rising beyond and ... doing my own thing.</p>
+      <p>Explore my work and discover how I inject aesthetics and creativity into each project.</p>
+      <button id="chaosButton">Enter Chaos</button>
+    </main>
+    
+    <footer>
+      <p>&copy; 2025 Pluto Creative Solutions. All Rights Reserved.</p>
+      <p>Legal Disclaimer: The content on this site serves as a professional portfolio and does not constitute professional advice...</p>
+    </footer>
+  </div>
+  
+  <!-- JavaScript to trigger chaos mode -->
+  <script>
+    document.getElementById("chaosButton").addEventListener("click", function() {
+      document.body.classList.add("chaos");
+    });
+  </script>
+</body>
+
+</html>
