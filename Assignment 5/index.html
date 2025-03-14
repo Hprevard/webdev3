@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+	
+	<title>ASMR Experience</title>
+	
+	<link rel="stylesheet" href="css/style.css">	
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Marcellus&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+  <div id="container"  class="normal">
+ <h1 class="title">Interactive Experiences</h1>
+        <div class="image-container">
+            <img src="img/elegant.jpg" alt="Elegant Scene" class="main-image">
+        </div>
+<section>
+   
+	
+	
+
+       <p id="woaw">This paragraph will be nonsense. Utter nonsense that I can think of because I'm doing this assignment when I cant sleep. Usually when I do sleep it is when I watch ASMR. My favorite ASMR channels are Atmosphere or rather ASMR Atmosphere, and ASMR Aura. In a way I feel as if they are designers. Using sounds, intriguing story lines and plots combined with sensory visuals appealing to the eye they arent any less of a designer or artist than we are. Let me explain, for Atmosphere she has made 3 different storyline plots combined into one ASMR series on Youtube.</p><p>
+      <p id="woaw">Filled with various colors and sounds to illustrate magic, sci fi, and other combined genres she holds a great claim on. Atmosphere is what I put on when I am trying to ... relax but not sleep yet. I must pay attention to the storyline and the symbolism plot points that connect to other plot lines and future plot points. It's a fun and relaxing experience. 
+	</p>
+	
+   </section>
+	
+   <section>
+	
+       
+      <button id="asmr">Experience Me</button> 
+       <audio id="sounds" src="audio/yourasmr.mp3"  preload="auto"></audio>
+       
+       
+	
+   </section>
+	
+
+
+
+  </div><!-- close "container" -->
+  
+  <!-- Link to jQuery on Google CDN-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+   
+  
+  <!-- Container for your jQuery code -->
+  <script>
+$(document).ready(function() {
+ $("#asmr").click(function() {
+ $("#container").removeClass("normal").addClass("asmr");
+    
+ $(".title").text("Relax and Enjoy");
+    $(".description").text("Enjoy this relaxing experience.");  
+    $("#main-image").attr("src", "images/asmr.jpg");
+      var audio = $("#sounds")[0];
+                if (audio.paused) {
+                    audio.play();
+                }
+    
+    
+    
+
+});//close click function
+
+
+}); //close .ready()
+</script>
+
+</body>
+	
+</html> 

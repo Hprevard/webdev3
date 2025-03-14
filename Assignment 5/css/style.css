@@ -1,0 +1,160 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+    
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+
+/* "Mobile first" CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
+
+body {
+font-family: 'Inter', sans-serif;
+    background-color: #FAFAFA;
+    color: #333333;
+    text-align: center;
+    transition: all 0.8s ease-in-out;
+
+}
+
+
+#container {
+	max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #3A86FF;
+    transition: all 0.5s ease-in-out;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    filter: brightness(1.1);
+    transition: all 0.5s ease-in-out;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    transition: all 0.5s ease-in-out;
+}
+
+.asmr {
+    background-color: #121212;
+    color: #E0E0E0;
+    font-family: 'Marcellus', serif;
+}
+
+.asmr h1 {
+    font-size: 2.5rem;
+    color: #E0C3FC;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
+}
+
+.asmr .image-container img {
+    filter: blur(3px) brightness(0.8);
+    transform: scale(1.05);
+}
+
+.asmr p {
+    font-size: 1.2rem;
+    color: #8EC5FC;
+    font-style: italic;
+}
+
+
+
+
+button {
+  padding: 12px 24px;
+    font-size: 1rem;
+    background-color: #264653;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+	 background-color: #E63946;
+    color: white; 
+	box-shadow:;
+}
+
+
+
+
+/* This is a class that will be used later... */
+#asmr {
+    background: linear-gradient(to right, #8EC5FC, #E0C3FC);
+}
+
+#asmr:hover {
+    background: linear-gradient(to right, #E0C3FC, #8EC5FC);
+}
+
+
+
+
+/* A better looking default horizontal rule */
+=====================
+MEDIA QUERIES!
+You can adjust the min-width numbers below, and add as many new media queries as you need.
+======================================== */
+
+/* Minimum width for iPads and tablets.  */
+@media all and (min-width: 481px) {
+	
+	
+	
+	
+} /* closes 481px+ */
+
+
+
+/* Minimum width for laptops. */
+@media all and (min-width: 769px) {
+	
+#container {
+	width:600px;
+	margin:auto;
+}	
+
+	
+	
+} /* closes 769px+ */
+
+
+
+/* Minimum width for desktop screens. */
+@media all and (min-width: 1024px) {
+	
+	
+#container {
+	width:800px;
+}	
+
+	
+} /* closes 1024px+ */
+
+
+
+
+
