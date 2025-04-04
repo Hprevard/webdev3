@@ -1,0 +1,143 @@
+body {
+      margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Arial, sans-serif;
+}
+
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    margin-bottom: 20px;
+}
+
+main {
+    max-height: 100vh; 
+    overflow-y: auto; 
+    padding: 20px;
+}
+
+.parallax {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+h1 {
+    font-size: 5rem;
+    text-shadow: 0 0 10px #ff66cc, 0 0 20px #ff66cc, 0 0 30px #b3b3b3, 0 0 40px #b3b3b3;
+    color: #ff66cc;
+}
+
+h2 {
+    font-size: 3rem;
+    text-shadow: 0 0 5px #b3b3b3, 0 0 10px #ff66cc;
+    color: #b3b3b3;
+}
+
+p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    text-shadow: 0 0 5px #b3b3b3;
+}
+
+.trigger.active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.5s ease;
+}
+
+.trigger {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.section1 {
+    background-image: url('../img/Battlefield.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.section2 {
+    background-image: url('../img/Prison.JPG');
+    background-size: cover;
+    background-position: center;
+}
+
+.trigger-section {
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #111;
+    color: white;
+}
+.content {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+}
+
+
+.trigger-section {
+    padding: 100px 20px;
+    background-color: #f0f0f0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.scroll-triggered {
+    animation: glow 1s forwards;
+}
+
+section.parallax {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #b3b3b3;
+    }
+    100% {
+        text-shadow: 0 0 10px #ff66cc, 0 0 20px #ff66cc, 0 0 30px #b3b3b3, 0 0 40px #b3b3b3;
+    }
+}
+
+
+
+
