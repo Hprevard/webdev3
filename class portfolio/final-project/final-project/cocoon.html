@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<title>In the Cocoon</title>
+	
+	<link rel="stylesheet" href="../final-project/css/style.css"><link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,300;1,500;1,700&family=DM+Sans:wght@200;300&family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body class="theme-dream-veil">
+    <header class="navbar">
+  <nav class="nav-content">
+    <ul class="nav-list">
+      <li><a href="index.html">The Nest</a></li>
+      <li><a href="creativefeatures.html">Creative Features</a></li>
+      <li><a href="cocoon.html">In the Cocoon</a></li>
+      <li><a href="our-roots.html">Our Roots</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <div id="container">
+      <h1 class="cocoon">
+    In the Cocoon 
+</h1>
+
+<section class="fade-in">
+  <div class="glass-box">
+    <div class="artist-entry">
+      <a href="Boyneski.html" class="cocoon-link">Boyneski</a> 
+      <img src="img/Boyneski5.jpg" alt="Boyneski cover image">
+    </div>
+  </div>
+</section>
+      
+     <section class="fade-in">
+       <div class="glass-box">
+       <div class="artist-entry">
+    <a href="Kabria.html" class="cocoon-link">Kabria</a> 
+          <img src="img/Kabria7.jpg" alt="cover image">
+         </div>
+         </div>
+      </section>
+      
+<section class="fade-in">
+       <div class="glass-box">
+       <div class="artist-entry">
+    <a href="Jaz.html" class="cocoon-link">Jaz</a>
+          <img src="img/Jaz9.jpg" class="">
+           </div>
+    </div>
+      </section> 
+      
+<section class="fade-in">
+       <div class="glass-box">
+       <div class="artist-entry">
+     <a href="Jadyn.html" class="cocoon-link">Jadyn Wilson</a>
+           <img src="img/Jadyn4.jpg" class="">
+           </div>
+    </div>
+      </section> 
+      
+<section class="fade-in">
+       <div class="glass-box">
+       <div class="artist-entry">
+    <a href="Jade.html" class="cocoon-link">Jad3_Suzuya</a>
+           <img src="img/Jade5.jpg" class="">
+           </div>
+    </div>
+      </section>
+      
+<section class="fade-in">
+       <div class="glass-box">
+      <div class="artist-entry">
+     <a href="Gabi.html" class="cocoon-link">Gabi</a>
+           <img src="img/Gabi1.jpg" class="">
+   
+           </div>
+           </div>
+      </section>
+      
+      <section class="fade-in">
+       <div class="glass-box">
+      <div class="artist-entry">
+     <a href="alex.html" class="cocoon-link">Alex</a>
+          <img src="img/Alex4.jpg" class="">
+           </div>
+          </div>
+      </section>
+  <!-- close "container" -->
+  
+  <!-- Link to jQuery on Google Hosted Libraries-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  
+  
+  <!-- Write your jQuery code inside of the .ready() function below -->
+  <script>
+$(document).ready(function() {
+  $(window).on("scroll", function() {
+    $(".fade-in").each(function() {
+      if ($(this).offset().top < $(window).scrollTop() + 600) {
+        $(this).addClass("visible");
+      }
+    });
+  });
+});
+
+
+</script>
+
+
+</body>
+	
+</html> 

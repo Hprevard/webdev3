@@ -1,0 +1,487 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+body{
+    color: #1E3B32;
+
+}
+
+h1 {
+  font-family: var(--cormorant);
+  font-weight: 700;
+  font-style: italic;
+  font-size: 4rem;
+  color: #D8CDEB;
+  text-shadow: 0 0 15px #7A7485;
+    text-align: center;
+      margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+h2 {
+  font-family:var (--dm-sans);
+  font-weight: 300;
+  font-size: 2.5rem;
+  color: #A9C4CF;
+  text-shadow: 0 0 8px rgba(169, 196, 207, 0.5);
+}
+
+h3 {
+  font-family: var(--dm-sans);
+  font-weight: 200;
+  font-size: 1.75rem;
+  color: #F4D4D7;
+  text-shadow: 0 0 8px rgba(244, 212, 215, 0.4);
+}
+
+h4 {
+  font-family: var(--cormorant);
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #DDE2E6;
+  text-shadow: 0 0 6px rgba(221, 226, 230, 0.3);
+}
+
+h5, nav a, .button, label {
+  font-family: var(--space-grotesk);
+  font-weight: 300;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #A9C4CF;
+  transition: color 0.3s ease;
+}
+
+nav a:hover, .button:hover {
+  color: #F4D4D7;
+  text-shadow: 0 0 5px #f4d4d7;
+}
+
+h6 {
+  font-family: var(--cormorant);
+  font-weight: 300;
+  font-size: 1.25rem;
+  font-style: italic;
+  color: #D8CDEB;
+  text-shadow: 0 0 5px #a4bcd8;
+}
+ p.main-text {
+  font-family: var(--dm-sans);
+  font-weight: 300;
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: inherit; /* inherits from theme's body color */
+  margin-bottom: 1.5rem;
+  text-align: left;
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.05);
+}
+
+body.theme-forest-bloom {
+  background: linear-gradient(135deg, #A9C4CF, #DDE2E6, #FDF8F3);
+    color: #1E3B32;}
+body.theme-cosmic-blush {
+  background: linear-gradient(135deg, #D8CDEB, #A4BCD8, #F4D4D7, #FDF8F3);
+  color: #3E2A4D;
+}
+
+body.theme-sky-deep {
+  background: linear-gradient(135deg, #A9C4CF, #FDF8F3, #1E3B32);
+    background-attachment: fixed;
+  background-size: cover;
+  color: #1E3B32;
+}
+
+body.theme-dream-veil {
+  background: linear-gradient(135deg, #FDF8F3, #F4D4D7, #D8CDEB);
+  background-attachment: fixed;
+  background-size: cover;
+  color: #4B3A57;
+}
+.glass-box {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 960px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.glass-box:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
+}
+body.theme-forest-bloom .glass-box {
+  border: 1px solid rgba(168, 196, 207, 0.3);
+  box-shadow: 0 0 20px rgba(169, 196, 207, 0.2);
+}
+
+body.theme-cosmic-blush .glass-box {
+  border: 1px solid rgba(244, 212, 215, 0.3);
+  box-shadow: 0 0 20px rgba(244, 212, 215, 0.25);
+}
+
+body.theme-sky-deep .glass-box {
+  border: 1px solid rgba(30, 59, 50, 0.3);
+  box-shadow: 0 0 20px rgba(30, 59, 50, 0.3);
+}
+
+body.theme-dream-veil .glass-box {
+  border: 1px solid rgba(216, 205, 235, 0.3);
+  box-shadow: 0 0 20px rgba(216, 205, 235, 0.25);
+}
+.glass-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-top: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.glass-box img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.3);
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: none;
+}
+
+.artist-entry {
+  font-family: var(--dm-sans);
+  font-size: 1.125rem;
+  font-weight: 300;
+  line-height: 1.5;
+  text-align: center;
+  color: inherit;
+    
+}
+
+.artist-entry img {
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 0.5rem;
+}
+
+.cocoon-link {
+  font-family: var(--cormorant);
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 500;
+  color: #D8CDEB;
+  text-shadow: 0 0 4px rgba(216, 205, 235, 0.4);
+  text-decoration: none;
+  display: inline-block;
+  transition: color 0.3s ease, transform 0.3s ease;
+  margin-bottom: 0.5rem;
+}
+
+.cocoon-link:hover {
+  color: #F4D4D7;
+  transform: scale(1.05);
+  text-shadow: 0 0 10px rgba(244, 212, 215, 0.6);
+}
+.jade-video {
+  width: 100%;
+  max-width: 720px;
+  margin-top: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.image-row {
+  display: flex;
+  justify-content: center;
+ align-items: center;   
+  gap: 1rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.nest-thumb {
+   width: 100%;
+  max-width: 220px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.nest-thumb:hover {
+  transform: scale(1.05);
+}
+.angeldust {
+  font-family: var(--cormorant);
+  font-style: italic;
+  font-weight: 600;
+  font-size: 2rem;
+  color: #A4BCD8;
+  text-shadow: 0 0 6px rgba(244, 212, 215, 0.5);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.angeldust img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 8px rgba(255,255,255,0.2);
+}
+.jadyn-video {
+  width: 100%;
+  max-width: 720px;
+  border-radius: 12px;
+  margin-top: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+} 
+:root {
+  --nav-bg: #FDF8F3;
+  --nav-text: #A9C4CF;
+  --stroke-1: #D8CDEB;
+  --stroke-2: #7A7485;
+  --shadow-color: rgba(244, 212, 215, 0.54);
+}
+
+.navbar {
+  max-width: 1280px;
+  height: 72px;
+  margin: 20px auto;
+  background-color: var(--nav-bg);
+  border-radius: 56px;
+  box-shadow:
+    0 4px 4px var(--shadow-color),
+    0 0 2px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.navbar::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 56px;
+  padding: 3px;
+  background: linear-gradient(90deg, var(--stroke-1), var(--stroke-2));
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  filter: blur(2px);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--nav-text);
+  padding: 10px 16px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.nav-list li a:hover {
+  background: linear-gradient(90deg, #FDF8F3, #A9C4CF);
+  color: #1E3B32;
+  box-shadow: 0 0 10px rgba(169, 196, 207, 0.4);
+}
+
+
+.
+/* Mobile First CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
+
+body {
+	
+	
+}
+section {
+  background: transparent;
+}
+
+
+
+#container {
+	
+}
+.contact-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.contact-form {
+  background: linear-gradient(135deg, #FDF8F3, #A9C4CF);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 450px;
+  width: 100%;
+  box-shadow: 0 0 30px rgba(216, 205, 235, 0.4);
+  color: #1E3B32;
+}
+
+.contact-form h2 {
+  font-family: var(--cormorant);
+  font-size: 2rem;
+  color: #3E2A4D;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.contact-form label {
+  display: block;
+  margin: 0.5rem 0 0.25rem;
+  font-family: var(--space-grotesk);
+  color: #3E2A4D;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #ffffffcc;
+  font-family: var(--dm-sans);
+  margin-bottom: 1rem;
+}
+
+.submit-button {
+  background: linear-gradient(90deg, #F4D4D7, #D8CDEB);
+  color: #1E3B32;
+  font-family: var(--space-grotesk);
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  display: block;
+  margin: 0 auto;
+}
+
+.submit-button:hover {
+  background: linear-gradient(90deg, #D8CDEB, #F4D4D7);
+  box-shadow: 0 0 10px rgba(244, 212, 215, 0.5);
+}
+
+
+
+
+
+/* Class for making YouTube/Vimeo videos responsive */
+
+figure.responsive {
+    position: relative;
+    padding-bottom: 56.25%;  /* 16:9 */
+    height: 0px;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+figure.responsive iframe {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* A better looking default horizontal rule */
+hr {
+    display: block;
+    height: 1px;
+    border: 0px;
+    border-top: 1px solid #ccc;
+    margin: 1em 0px;
+    padding: 0px;
+}
+
+
+
+/* ========================================
+MEDIA QUERIES!
+You can adjust the min-width numbers below, and add as many new media queries as you need.
+======================================== */
+
+/* Minimum width for portrait tablets and large phone screens.  */
+@media all and (min-width: 600px) {
+	
+	
+	
+	
+} /* closes 600px+ */
+
+
+
+/* Minimum width for landscape laptops. */
+@media all and (min-width: 768px) {
+	
+	
+	
+	
+} /* closes 768px+ */
+
+
+
+/* Minimum width for larger tablets, laptops and desktops. */
+@media all and (min-width: 992px) {
+	
+	
+	
+	
+} /* closes 992px+ */
+
+
+
+/* Minimum width for larger desktops. */
+@media all and (min-width: 1200px) {
+	
+	
+	
+	
+} /* closes 1200px+ */
+
+
+

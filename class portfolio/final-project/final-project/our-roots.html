@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<title>Our Roots</title>
+	
+	<link rel="stylesheet" href="css/style.css"><link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,300;1,500;1,700&family=DM+Sans:wght@200;300&family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
+
+	
+</head>
+
+
+<body class="theme-cosmic-blush">
+   <header class="navbar">
+  <nav class="nav-content">
+    <ul class="nav-list">
+      <li><a href="index.html">The Nest</a></li>
+      <li><a href="creativefeatures.html">Creative Features</a></li>
+      <li><a href="cocoon.html">In the Cocoon</a></li>
+      <li><a href="our-roots.html">Our Roots</a></li>
+    </ul>
+  </nav>
+</header>
+  <div id="container">
+      <h1 class="roots">
+    Our Roots 
+</h1>
+<h2 class="kabria">
+    About Pluto </h2>
+      <img src="img/Pluto.jpg" class="nest-thumb">
+      
+    
+      
+   <section class="fade-in">
+       <div class="glass-box">
+           <p>My first spark of creativity was the numerous art projects I did as a child. I would always draw, write, and tell stories as a little child. My aunt legit just called to remind me about how when I was in the car with my family I found a way to conjure a story about me getting abducted by aliens and she noted how my entire family was captivated while I told the story because it obviously wasn't real but I made it seem so real in my little booster seat.</p> </div>
+      </section>   
+       <section class="fade-in">
+       <div class="glass-box">
+         <img src="img/siren.png" class="nest-thumb">  
+           <img src="img/chevy.png" class="nest-thumb">
+           <p>As I got older I had a lot of freedom to be as creative as I wanted to be but it was never my main focus. My main focus was on writing because my school would make every student in the school write a book (A PHYSICAL BOOK) and turn it into school and everyone knew that that was MY project. But I always felt like I couldn't draw (still I feel like I can't draw) but I learned how to draw by tracing manga covers and taking as many art classes as I could. Drawing and coloring was always a sort of freedom. I just spent my teens seeing it as a hobby. </p> </div>
+      </section>
+      <img src="img/Storyboard.JPG" class="nest-thumb">
+      <img src="img/volc.JPG" class="nest-thumb">
+       <section class="fade-in">
+       <div class="glass-box">
+      <p>But the hardest period in my life regarding art I would say is what I'm still currently experiencing but I’m having difficulty seeing myself as an actual artist. Yes I can draw, write, design, animate. But still that imposter syndrome hits harder than a freight train. It's so hard pushing myself to create projects and to stop holding myself back. Creating Pluto as my alter ego was basically me giving myself permission to be my extremely most unique self while creating to my heart's content. </p>
+           </div>
+           </section>     <img src="img/coitere.png" class="nest-thumb">
+      <img src="img/Hitxon.jpg" class="nest-thumb">
+<section class="fade-in">
+       <div class="glass-box">
+           <p>I just love contact with paper. It's my roots. I've always had an extremely therapeutic relationship with paper. It was always there to accept my art with no judgement, just a mirror that I can alter and change while still staying the same.</p> </div>
+      </section>
+      <div class="image-row">
+      <img src="img/Jaynsanity1.jpg" class="nest-thumb">
+      <img src="img/Emperor.JPG" class="nest-thumb">
+      <img src="img/asm.JPG" class="nest-thumb">
+    </div>
+<section class="fade-in">
+       <div class="glass-box">
+      <p>  I hope that this site encourages you to evolve and change with no fear or holding yourself back. 
+           </p> </div>
+      </section>
+      
+<section class="fade-in">
+  <div class="contact-container">
+    <form class="contact-form" name="contact" method="POST" data-netlify="true">
+      <h2>Contact Me</h2>
+      <label for="name">Name</label>
+      <input type="text" name="name" required>
+      
+      <label for="email">Email</label>
+      <input type="email" name="email" required>
+      
+      <label for="message">Message</label>
+      <textarea name="message" rows="5" required></textarea>
+      
+      <button type="submit" class="submit-button">Send</button>
+    </form>
+  </div>
+</section>
+
+  </div><!-- close "container" -->
+  
+  <!-- Link to jQuery on Google Hosted Libraries-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  
+  
+  <!-- Write your jQuery code inside of the .ready() function below -->
+ <script>
+$(document).ready(function() {
+  $(window).on("scroll", function() {
+    $(".fade-in").each(function() {
+      if ($(this).offset().top < $(window).scrollTop() + 600) {
+        $(this).addClass("visible");
+      }
+    });
+  });
+});
+</script>
+
+</body>
+	
+</html> 

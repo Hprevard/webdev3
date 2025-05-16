@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<title>Jaz</title>
+	
+	<link rel="stylesheet" href="css/style.css"><link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,300;1,500;1,700&family=DM+Sans:wght@200;300&family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
+	
+	
+</head>
+
+<body class="theme-cosmic-blush">
+   <header class="navbar">
+  <nav class="nav-content">
+    <ul class="nav-list">
+      <li><a href="index.html">The Nest</a></li>
+      <li><a href="creativefeatures.html">Creative Features</a></li>
+      <li><a href="cocoon.html">In the Cocoon</a></li>
+      <li><a href="our-roots.html">Our Roots</a></li>
+    </ul>
+  </nav>
+</header> 
+
+  <div id="container">
+<h1 class="Hi">
+    Jaz
+</h1>
+
+
+<section class="fade-in">
+       <div class="glass-box"> <img src="img/Jaz2.jpg" class="">
+   <p class="">  She realized that she loved telling stories when imaging characters. The earliest Jaz told her stories, she was really little telling her stories to someone else, then they would have complex stories to narrate while they played with dolls.
+           </p>      </div>
+      </section>
+<section class="fade-in">
+       <div class="glass-box"> <img src="img/Jaz5.jpg" class="">
+   <p class="">  Creating elaborate stories while she played with dolls with family members, originally her cousin would lead the stories until she got older and then Jaz had to step up to the plate narrating stories for her younger relatives who would also play with her. 
+           </p> <img src="img/Jaz8.jpg" class="">  </div>    
+      </section>
+<section class="fade-in">
+       <div class="glass-box"> <img src="img/Jaz9.jpg" class="">
+           <p class="">  Always loved reading, and hearing story times from her family. Always encouraging others around her family, no matter the age, to get their library card. </p> </div>
+      </section>
+<section class="fade-in">
+       <div class="glass-box"> <img src="img/Jaz6.jpg" class="">
+           <p class="">  Jaz loved many books when she was younger including Fancy Nancy, old rascal shorts, the older looney toons which would inspire her sillier stories. Also inspired by reality shows like Tia Tamera, Julian and Bill. Acting out the scenes from the shows.  </p> <img src="img/Jaz7.jpg" class=""> </div>
+      </section>
+
+    <section class="fade-in">
+       <div class="glass-box"> <img src="img/Jaz3.jpg" class="">
+           <p class="">  Writing more personal essays, writing more fictional stories with worldbuilding and plots to develop her characters. Her dialogue is heavily inspired by the old Hollywood shows she loves, delighting her professors with the quick dialogue and catchphrases that were stables from that time. Those that read her work report how her work is so happy and delightful to read.  </p><img src="img/Jaz2.jpg" class=""> </div>
+      </section>
+
+     <section class="fade-in">
+       <div class="glass-box"> <img src="img/Jaz1.jpg" class="">
+    <p class="">  Reading Toni Morrison and more authors have helped her writing skills and get stronger as a writer. Learning to balance her time to write, balancing school and her writing of personal essays, fiction and short stories. Lastly of course choosing Dean Martin and Dorothy Dandridge to have a nice meal with out of any classic stars. 
+  </p> 
+         <img src="img/Jaz4.jpg" class="">
+         </div>  </section>
+  </div><!-- close "container" -->
+  
+  <!-- Link to jQuery on Google Hosted Libraries-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  
+  
+  <!-- Write your jQuery code inside of the .ready() function below -->
+   <script>
+$(document).ready(function() {
+  $(window).on("scroll", function() {
+    $(".fade-in").each(function() {
+      if ($(this).offset().top < $(window).scrollTop() + 600) {
+        $(this).addClass("visible");
+      }
+    });
+  });
+});
+</script>
+
+
+</body>
+	
+</html> 
